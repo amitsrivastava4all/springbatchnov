@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+<bean id="employeeBeanObject" class="com.srivastava.basics.Employee" scope="prototype"  lazy-init="false"   >
+     <constructor-arg value="1001" />
+    <constructor-arg value="Ram" />
+    <constructor-arg value="9000" />
+     
+ <property name="id" value="1002"/>
+<property name="name" value="Ram Kumar"/>
+<property name="salary" value="19000.00"/>  
+</bean>
+</beans>
